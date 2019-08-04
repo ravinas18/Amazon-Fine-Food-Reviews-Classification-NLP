@@ -14,12 +14,17 @@ _Step3_: Apply Feature generation techniques(Bow,tfidf).
 _Step4_: Apply Logistic Regression algorithm using each technique.  
 _Step5_: To find lambda using gridsearch cross-validation and random cross-validation.  
 _Step5_: L2 regularization.  
-_Step6_: Feature Importance for postive and Negative reviews    
+_Step6_: Feature Importance for postive and Negative reviews:    
          1. Most Important Feature.  
          2. Bar plot of top 15 Important Features.  
-### Preprocessing Review Text:
-Our data requires some preprocessing before we go on further with analysis and making the prediction model.
+### Preprocessing 
+Transforming _score_ column by writting "positive" for values greater than 3 and "negative" for values less than or equal to 3.  
+Sorting data according to ProductId in ascending order.  
+Every datasets contains some unwanted data.Raw data is preprocessed by removing duplication.  
+![alt text](/Images/Graph.PNG)
+Our data requires some preprocessing before we go on further with analysis and making the prediction model.  
 Hence in the Preprocessing phase we do the following in the order below:-  
+#### Review Text:
          **1** Begin by removing the html tags.  
          **2** Remove any punctuations or limited set of special characters like , or . or # etc.  
          **3** Check if the word is made up of english letters and is not alpha-numeric.  
