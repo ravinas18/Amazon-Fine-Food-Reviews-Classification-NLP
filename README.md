@@ -39,6 +39,8 @@ So here,time conversion is not necessary to process on amazon data.
 **_lambda_LR_** is written function to calculate the optimal lambda value for Logistic Regression.
 GridsearchCV and RandomsearchCV method are used to obtain optimal lambda with L2 penality,different scoring options ( e.g,accuracy,precision,recall and F1-score) and broad range of lambda.  
 Best parameter lambda and penalty for which model performs very well is obtained. 
+#### Below snap is of Confusion matrix for TF-IDF with RandomSearch CV & L1 regularization:
+![alt text](/Images/Confusion.PNG)
 ### Feature Importance for Logistic Regression:
 
 ## Conclusion:
