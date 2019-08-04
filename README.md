@@ -21,7 +21,9 @@ _Step6_: Feature Importance for postive and Negative reviews:
 Transforming _score_ column by writting "positive" for values greater than 3 and "negative" for values less than or equal to 3.  
 Sorting data according to ProductId in ascending order.  
 Every datasets contains some unwanted data.Raw data is preprocessed by removing duplication.  
-![alt text](/Images/Graph.PNG)
+#### Graph of positive and negative reviews after removing duplication:    
+![alt text](/Images/Graph.PNG)  
+  
 Our data requires some preprocessing before we go on further with analysis and making the prediction model.  
 Hence in the Preprocessing phase we do the following in the order below:-  
 #### Review Text:
