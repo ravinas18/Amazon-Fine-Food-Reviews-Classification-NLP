@@ -39,7 +39,17 @@ Methods:
 lambda_LR is written function to calculate the optimal lambda value for Logistic Regression.
 GridsearchCV and RandomsearchCV method are used to obtain optimal lambda with L2 penality,different scoring options(e.g,accuracy,precision,recall and F1-score) and broad range of lambda.  
 Best parameter lambda and penalty for which model performs very well is obtained. 
+### Feature Importance for Logistic Regression:
 
+## Conclusion:
+|       Model       |Vectorizer|   SearchCV   |Best penalty|Optimal lambda|Training error|Test error|Accuracy| F1  |recall|precision|
+|-------------------|----------|--------------|------------|-------------:|-------------:|---------:|-------:|----:|-----:|--------:|
+|Logistic Regression|BoW       |GridSearchCV  |l2          |        1.0000|       0.00504|     20.46|  0.7954|76.53| 76.32|    76.76|
+|Logistic Regression|BOW       |RandomsearchCV|l2          |        0.0036|       0.98678|     16.38|  0.8362|80.59| 79.51|    82.21|
+|Logistic Regression|TF-IDF    |RandomsearchCV|l2          |        0.4245|       0.00504|     20.04|  0.7996|76.94| 76.66|    77.27|
+|Logistic Regression|TF-IDF    |GridSearchCV  |l2          |        1.0000|       0.00000|     21.90|  0.7810|68.75| 67.20|    84.09|
 
-
+* Above Table shows the performance of trained and tested model with Logistic Regression.  
+* Confusion matrix and scoring metrics values for TF-IDF with RandomSearch CV & L1 regularization is comparatively best with other trained model.  
+* After comparing the developed models, Logistic Regression model with TF-IDF with RandomsearchCV ,l1 regularization works the best to predict the polarity of reviews among all models.  
 
