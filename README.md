@@ -32,12 +32,12 @@ Hence in the Preprocessing phase we do the following in the order below:-
 The column Time is based on unix timestamp.The unix time stamp is a way to track time as a running total of seconds and In time technically does not change no matter where you are located on the globe. This is very useful to computer systems for tracking and sorting dated information in dynamic and distributed applications both online and client side. https://www.unixtimestamp.com/ .  
 So here,time conversion is not necessary to process on amazon data.
 ### Methods to convert text into vector:
-Methods:  
-* Bag of Words.    
-* Tf-idf.    
+####Methods:  
+         * Bag of Words.    
+         * Tf-idf.    
 ### Optimal Lambda for Logistic Regression:
-lambda_LR is written function to calculate the optimal lambda value for Logistic Regression.
-GridsearchCV and RandomsearchCV method are used to obtain optimal lambda with L2 penality,different scoring options(e.g,accuracy,precision,recall and F1-score) and broad range of lambda.  
+**_lambda_LR_** is written function to calculate the optimal lambda value for Logistic Regression.
+GridsearchCV and RandomsearchCV method are used to obtain optimal lambda with L2 penality,different scoring options ( e.g,accuracy,precision,recall and F1-score) and broad range of lambda.  
 Best parameter lambda and penalty for which model performs very well is obtained. 
 ### Feature Importance for Logistic Regression:
 
