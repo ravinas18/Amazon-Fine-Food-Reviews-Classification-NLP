@@ -38,8 +38,7 @@ Hence in the Preprocessing phase we do the following in the order below:-
 ### Splitting Training and Testing dataset based on Time:
 The column Time is based on unix timestamp.The unix time stamp is a way to track time as a running total of seconds and In time technically does not change no matter where you are located on the globe. This is very useful to computer systems for tracking and sorting dated information in dynamic and distributed applications both online and client side. https://www.unixtimestamp.com/ .  
 So here,time conversion is not necessary to process on amazon data.
-### Methods to convert text into vector:
-#### Methods:  
+### Methods used to convert text into vector:  
    **1** Bag of Words      
    **2** Tf-idf      
 ### Optimal Lambda for Logistic Regression:
