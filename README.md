@@ -1,9 +1,9 @@
 # Amazon-Fine-Food-Reviews-Classification-NLP
-## Abstract
+## Abstract:  
 The project aimed at building best working model for classification of positive and negative reviews.  
 Apply Logistic Regression algorithm using each technique.
 
-## Dataset 
+## Dataset:   
 The dataset used is https://www.kaggle.com/snap/amazon-fine-food-reviews.  
 This dataset consists of reviews of fine foods from amazon. The data span a period of more than 10 years, including all ~500,000                reviews up to October 2012. Reviews include product and user information, ratings, and a plain text review.  It also includes reviews            from all other Amazon categories.
 
@@ -33,14 +33,14 @@ The column Time is based on unix timestamp.The unix time stamp is a way to track
 So here,time conversion is not necessary to process on amazon data.
 ### Methods to convert text into vector:
 #### Methods:  
-         * Bag of Words.    
-         * Tf-idf.    
+   **1** Bag of Words      
+   **2** Tf-idf      
 ### Optimal Lambda for Logistic Regression:
 **_lambda_LR_** is written function to calculate the optimal lambda value for Logistic Regression.
 GridsearchCV and RandomsearchCV method are used to obtain optimal lambda with L2 penality,different scoring options ( e.g,accuracy,precision,recall and F1-score) and broad range of lambda.  
 Best parameter lambda and penalty for which model performs very well is obtained. 
-#### Below snap is of Confusion matrix for TF-IDF with RandomSearch CV & L1 regularization:
-![alt text](/Images/Confusion.PNG)
+#####         Below snap is of Confusion matrix for TF-IDF with RandomSearch CV & L1 regularization:
+  ![alt text](/Images/Confusion.PNG)
 ### Feature Importance for Logistic Regression:
 
 ## Conclusion:
